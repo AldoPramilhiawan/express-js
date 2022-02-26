@@ -13,5 +13,4 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(router);
 
-
-app.listen(port, () => console.log(`Your App is succesfully listening on port ${port}`))
+app.listen(port)
