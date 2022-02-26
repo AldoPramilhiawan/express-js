@@ -28,6 +28,10 @@ exports.findAllCategories = (req,res) => {
                 id: 3,
                 category: 'Health'
             },
+            {
+                id: 4,
+                category: 'Celebrity'
+            }
         ]
     })
 }
