@@ -7,6 +7,12 @@ const { findAllNews, findNewsById, createNews } = require('./routes/news');
 const { findAuthorById, findAllAuthors } = require('./routes/author');
 const { findNewsByCategory, findAllCategories } = require('./routes/newsCategory');
 
+router.get('/', (req,res) => {
+    res.send({
+        status: 200,
+        message: 'Welcome to My Express App'
+    })
+})
 
 // News
 router.get('/news', findAllNews);

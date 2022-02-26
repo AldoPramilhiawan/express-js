@@ -6,10 +6,6 @@ const router = require('./routes');
 const log = require('./middleware/logger');
 const port = process.env.PORT || 8080;
 
-app.get('/', (req,res) => {
-    res.send('Hello Express App')
-})
-
 app.use(cors());
 app.use(log);
 app.use(express.urlencoded({extended: true}));
