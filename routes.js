@@ -8,13 +8,6 @@ const { findAuthorById, findAllAuthors } = require('./routes/author');
 const { findNewsByCategory, findAllCategories } = require('./routes/newsCategory');
 
 
-router.get('/', (req,res) => {
-    res.send({
-        status: 'Successfully',
-        message: 'Welcome to News App',
-    });
-});
-
 // News
 router.get('/news', findAllNews);
 router.get('/news/:id', findNewsById);
